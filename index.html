@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible DataList Example</title>
+  <style type="text/css">
+  body {
+    padding:1em;
+  }
+
+  select {
+    font-size:1.4em;
+  }
+
+  label {
+    display:block;
+    margin-bottom:.5em;
+  }
+
+  p {
+    max-width:42em
+  }
+
+  section {
+    margin-bottom:1em;
+  }
+
+  #next-weeks-goal-list-input {
+    width:100%;
+    font-size:1.4em;
+  }
+  </style>
+  <script src="assets/js/vendor/modernizr-custom.min.js"></script>
+</head>
+<body>
+  <section id="select">
+    <h2>Select Box</h2>
+  <label for="next-weeks-goal">What's next week's goal?</label>
+  <select autofocus id="next-weeks-goal" name="next-weeks-goal">
+     <optgroup label="Unit 1">
+        <option label="Unit 1: Structure and Style with HTML and CSS">Unit 1: Structure and Style with HTML and CSS</option>
+        </optgroup><optgroup label="Lesson 1.1: Intro to HTML &amp; CSS">
+          <option label="1.1.1: Introducing HTML">Assignment 1.1.1: Introducing HTML</option>
+          <option label="1.1.2: Introducing CSS">Assignment 1.1.2: Introducing CSS</option>
+          <option label="1.1.3: Wrap Up">Assignment 1.1.3: Wrap Up</option>
+        </optgroup>
+        <optgroup label="Lesson 1.2: HTML Classes, CSS Positioning, and the Box Model">
+          <option label="1.2.1: Set Up CodePen">Assignment 1.2.1: Set Up CodePen</option>
+          <option label="1.2.2: Wireframe Your About Me Page">Assignment 1.2.2: Wireframe Your About Me Page</option>
+          <option label="1.2.3: Structure Your HTML">Assignment 1.2.3: Structure Your HTML</option>
+          <option label="1.2.4: Build Your Header: Challenge">Assignment 1.2.4: Build Your Header: Challenge</option>
+          <option label="1.2.5: Build Your Header: Walkthrough">Assignment 1.2.5: Build Your Header: Walkthrough</option>
+          <option label="1.2.6: Position the Header Image: Walkthrough">Assignment 1.2.6: Position the Header Image: Walkthrough</option>
+          <option label="1.2.7: Build the Middle Sections: Challenge">Assignment 1.2.7: Build the Middle Sections: Challenge</option>
+          <option label="1.2.8: Build the Middle Sections: HTML Walkthrough">Assignment 1.2.8: Build the Middle Sections: HTML Walkthrough</option>
+          <option label="1.2.9: Build the Middle Sections: CSS Walkthrough">Assignment 1.2.9: Build the Middle Sections: CSS Walkthrough</option>
+          <option label="1.2.10: Build Your Footer: Challenge">Assignment 1.2.10: Build Your Footer: Challenge</option>
+          <option label="1.2.11: Build Your Footer: Walkthrough">Assignment 1.2.11: Build Your Footer: Walkthrough</option>
+          <option label="1.2.12: Review of Positioning and Layout Key Points">Assignment 1.2.12: Review of Positioning and Layout Key Points</option>
+          <option label="1.2.13: Upgrade the Typography">Assignment 1.2.13: Upgrade the Typography</option>
+          <option label="1.2.14: Style Your Page">Project 1.2.14: Style Your Page</option>
+          <option label="1.2.15: Wrap Up">Assignment 1.2.15: Wrap Up</option>
+        </optgroup>
+        <optgroup label="Lesson 1.3">
+          <option label="Lesson 1.3: Hack The Times">Lesson 1.3: Hack The Times</option>
+          <option label="1.3.1: Use Chrome Developer Tools">Assignment 1.3.1: Use Chrome Developer Tools</option>
+          <option label="1.3.2: Hack the New York Times: Challenge">Project 1.3.2: Hack the New York Times: Challenge</option>
+          <option label="1.3.3: The Command Line">Assignment 1.3.3: The Command Line</option>
+          <option label="1.3.4: Git and GitHub">Project 1.3.4: Git and GitHub</option>
+        </optgroup>
+        <optgroup label="Lesson 1.4: Build a Landing Page from Scratch">
+          <option label="1.4.1: Upgrade Sublime">Assignment 1.4.1: Upgrade Sublime</option>
+          <option label="1.4.2: Prepare the Landing Page Project">Assignment 1.4.2: Prepare the Landing Page Project</option>
+          <option label="1.4.3: Build the Karma Navigation Bar: Challenge">Assignment 1.4.3: Build the Karma Navigation Bar: Challenge</option>
+          <option label="1.4.4: Build the Karma Navigation Bar: Walkthrough">Assignment 1.4.4: Build the Karma Navigation Bar: Walkthrough</option>
+          <option label="1.4.5: Construct the Background Image Section: Challenge">Assignment 1.4.5: Construct the Background Image Section: Challenge</option>
+          <option label="1.4.6: Construct the Background Image Section: Walkthrough">Assignment 1.4.6: Construct the Background Image Section: Walkthrough</option>
+          <option label="1.4.7: Save Your Progress with GitHub">Assignment 1.4.7: Save Your Progress with GitHub</option>
+          <option label="1.4.8: Build the Three-Icon Section: Challenge">Assignment 1.4.8: Build the Three-Icon Section: Challenge</option>
+          <option label="1.4.9: Build the Three-Icon Section: Walkthrough">Assignment 1.4.9: Build the Three-Icon Section: Walkthrough</option>
+          <option label="1.4.10: Build the Karma Footer: Challenge">Assignment 1.4.10: Build the Karma Footer: Challenge</option>
+          <option label="1.4.11: Build the Karma Footer: Walk-through">Assignment 1.4.11: Build the Karma Footer: Walk-through</option>
+          <option label="1.4.12: FavIcons and Other Finishing Touches">Project 1.4.12: FavIcons and Other Finishing Touches</option>
+        </optgroup>
+        <optgroup label="Lesson 1.5: Create a Responsive Web Page">
+          <option label="1.5.1: Intro to Responsive">Assignment 1.5.1: Intro to Responsive</option>
+          <option label="1.5.2: Make About Me Responsive">Project 1.5.2: Make About Me Responsive</option>
+          <option label="1.5.3: Submitting Your Portfolio">Project 1.5.3: Submitting Your Portfolio</option>
+        </optgroup>
+        <optgroup label="Unit 2: jQuery">
+          </optgroup><optgroup label="Lesson 2.1: Introducing jQuery">
+          <option label="2.1.1: Hello World with jQuery">Assignment 2.1.1: Hello World with jQuery</option>
+          <option label="2.1.2: Introducing the Document Object Model">Assignment 2.1.2: Introducing the Document Object Model</option>
+          <option label="2.1.3: Practice jQuery Basics">Assignment 2.1.3: Practice jQuery Basics</option>
+          <option label="2.1.4: Searching and Traversing the DOM">Assignment 2.1.4: Searching and Traversing the DOM</option>
+          <option label="2.1.5: Wrap Up">Assignment 2.1.5: Wrap Up</option>
+        </optgroup>
+        <optgroup label="Lesson 2.2: Manipulating the DOM, Events, and Effects with jQuery">
+          <option label="2.2.1: Street Fighter: Overview">Assignment 2.2.1: Street Fighter: Project Overview</option>
+          <option label="2.2.2: Street Fighter: HTML and CSS Walkthrough">Assignment 2.2.2: Street Fighter: HTML and CSS Walkthrough</option>
+          <option label="2.2.3: Street Fighter: jQuery Events Walkthrough">Assignment 2.2.3: Street Fighter: jQuery Events Walkthrough</option>
+          <option label="2.2.4: Street Fighter: Animation Walkthrough">Assignment 2.2.4: Street Fighter: Animation Walkthrough</option>
+          <option label="2.2.5: Street Fighter Project: Challenge">Project 2.2.5: Street Fighter Project: Challenge</option>
+        </optgroup>
+         <optgroup label="Lesson 2.3: Build a Shopping List App">
+          <option label="2.3.1: Design and Wireframe Your App">Project 2.3.1: Design and Wireframe Your App</option>
+          <option label="2.3.2: Create a Non-Interactive Version">Project 2.3.2: Create a Non-Interactive Version</option>
+          <option label="2.3.3: Complete Your Shopping List App">Project 2.3.3: Complete Your Shopping List App</option>
+         </optgroup>
+
+        <optgroup label="Unit 3: Programming Fundamentals in JavaScript">
+          </optgroup><optgroup label="Lesson 3.1: JavaScript Basics">
+            <option label="3.1.1: Introduction to Programming">Assignment 3.1.1: Introduction to Programming</option>
+            <option label="3.1.2: Running Code in the JavaScript Console">Assignment 3.1.2: Running Code in the JavaScript Console</option>
+            <option label="3.1.3: Get to Know JavaScript's Data Types">Assignment 3.1.3: Get to Know JavaScript's Data Types</option>
+            <option label="3.1.4: Numbers and Arithmetic Operators and Comparators">Assignment 3.1.4: Numbers and Arithmetic Operators and Comparators</option>
+            <option label="3.1.5: Working with Strings">Assignment 3.1.5: Working with Strings</option>
+            <option label="3.1.6: Working with Variables">Assignment 3.1.6: Working with Variables</option>
+            <option label="3.1.7: Conditionals and Truthiness">Assignment 3.1.7: Conditionals and Truthiness</option>
+            <option label="3.1.8: Loops and Arrays">Assignment 3.1.8: Loops and Arrays</option>
+            <option label="3.1.9: FizzBuzz: Challenge">Project 3.1.9: FizzBuzz: Challenge</option>
+            <option label="3.1.10: Wrap Up">Assignment 3.1.10: Wrap Up</option>
+          </optgroup>
+
+
+          <optgroup label="Lesson 3.2: Functions and Scope">
+            <option label="3.2.1: Introduction to Functions">Assignment 3.2.1: Introduction to Functions</option>
+            <option label="3.2.2: Practice Functions">Assignment 3.2.2: Practice Functions</option>
+            <option label="3.2.3: FizzBuzz Refactor: Challenge">Project 3.2.3: FizzBuzz Refactor: Challenge</option>
+            <option label="3.2.4: Hot or Cold App: Challenge">Project 3.2.4: Hot or Cold App: Challenge</option>
+            <option label="3.2.5: Wrap Up">Assignment 3.2.5: Wrap Up</option>
+          </optgroup>
+          <optgroup label="Lesson 3.3: Objects and Object Oriented Programming">
+            <option label="3.3.1: Object Basics">Assignment 3.3.1: Object Basics</option>
+            <option label="3.3.2: Deeper into Objects">Assignment 3.3.2: Deeper into Objects</option>
+            <option label="3.3.3: Debugging JavaScript with Developer Tools">Assignment 3.3.3: Debugging JavaScript with Developer Tools</option>
+            <option label="3.3.4: Design and Wireframe Your Quiz App">Project 3.3.4: Design and Wireframe Your Quiz App</option>
+            <option label="3.3.5: Create a Non-Interactive Version of Your Quiz App">Project 3.3.5: Create a Non-Interactive Version of Your Quiz App</option>
+            <option label="3.3.6: Make Your Quiz App Interactive">Project 3.3.6: Make Your Quiz App Interactive</option>
+            <option label="3.3.7: Optional Bonus Project –&amp;nbsp;Contacts Application">Project 3.3.7: Optional Bonus Project –&nbsp;Contacts Application</option>
+            <option label="3.3.8: Wrap Up">Assignment 3.3.8: Wrap Up</option>
+          </optgroup>
+
+        <optgroup label="Unit 4: Ajax and Advanced jQuery">
+          </optgroup><optgroup label="Lesson 4.1: Working with AJAX">
+            <option label="4.1.1: Intro to APIs">Assignment 4.1.1: Intro to APIs</option>
+            <option label="4.1.2: Coding with APIs">Assignment 4.1.2: Coding with APIs</option>
+            <option label="4.1.3: Exploring the API Data">Assignment 4.1.3: Exploring the API Data</option>
+            <option label="4.1.4: Showing the API Data">Assignment 4.1.4: Showing the API Data</option>
+            <option label="4.1.5: Thinkful Tube: Challenge">Assignment 4.1.5: Thinkful Tube: Challenge</option>
+            <option label="4.1.6: Wrap Up">Assignment 4.1.6: Wrap Up</option>
+          </optgroup>
+          <optgroup label="Lesson 4.2: StackOverflow Reputation Builder">
+            <option label="4.2.1: Reputation Builder: Walkthrough">Assignment 4.2.1: Reputation Builder: Walkthrough</option>
+            <option label="4.2.2: “Get Inspired” Feature">Project 4.2.2: “Get Inspired” Feature</option>
+          </optgroup>
+          <optgroup label="Lesson 4.3: Bonus Code Challenges">
+            <option label="4.3.1: Tic Tac Toe">Project 4.3.1: Tic Tac Toe</option>
+            <option label="4.3.2: Logo Search">Project 4.3.2: Logo Search</option>
+          </optgroup>
+          <optgroup label="Lesson 4.4: Capstone: API Hack">
+            <option label="4.4.1: Choosing an API">Assignment 4.4.1: Choosing an API</option>
+            <option label="4.4.2: Sketching your Project">Project 4.4.2: Sketching your Project</option>
+            <option label="4.4.3: Prototype your App">Project 4.4.3: Prototype your App</option>
+            <option label="4.4.4: Integrate an API">Project 4.4.4: Integrate an API</option>
+          </optgroup>
+          <optgroup label="Lesson 4.5: Polishing your Portfolio">
+            <option label="4.5.1: Finishing your Portfolio">Project 4.5.1: Finishing your Portfolio</option>
+            <option label="4.5.2: What to learn next">Assignment 4.5.2: What to learn next</option>
+            <option value="exit interview" label="4.5.3: Exit Interview">Assignment 4.5.3: Exit Interview</option>
+          </optgroup>
+  </select>
+  <p>HTML <code>&lt;select&gt;</code> boxes inherently have "typeahead" support allowing you to accessibly select options based on typing them. For example, <a class="try-it" href="#next-weeks-goal">set focus to the <code>&lt;select&gt;</code></a> and type "4.2" to jump to the Reuptuation Builder Walkthrough.</p>
+  <p><code>&lt;optgroup&gt;</code> tags are used and nested to give structure to the available <code>&lt;options&gt;</code>.</p>
+  <button class="try-it">Try it</button>
+  </section>
+  <hr />
+  <section id="datalist">
+    <form action="#" id="datalist-form">
+      <h2>Datalist</h2>
+      <label for="next-weeks-goal-list">What's next week's goal?</label>
+      <p id="enter-anything">Enter anything</p>
+      <input type="text" id="next-weeks-goal-list-input" name="next-weeks-goal-list-input" list="next-weeks-goal-list" />
+
+      <p id="or-choose">Or choose</p>
+      <datalist id="next-weeks-goal-list" name="next-weeks-goal-list">
+       <select id="next-weeks-goal-list-select" name="next-weeks-goal-list-select">
+       <optgroup label="Unit 1">
+          <option label="Unit 1: Structure and Style with HTML and CSS">Unit 1: Structure and Style with HTML and CSS</option>
+          </optgroup><optgroup label="Lesson 1.1: Intro to HTML &amp; CSS">
+            <option label="1.1.1: Introducing HTML">1.1.1: Introducing HTML</option>
+            <option label="1.1.2: Introducing CSS">1.1.2: Introducing CSS</option>
+            <option label="1.1.3: Wrap Up">1.1.3: Wrap Up</option>
+          </optgroup>
+          <optgroup label="Lesson 1.2: HTML Classes, CSS Positioning, and the Box Model">
+            <option label="1.2.1: Set Up CodePen">1.2.1: Set Up CodePen</option>
+            <option label="1.2.2: Wireframe Your About Me Page">1.2.2: Wireframe Your About Me Page</option>
+            <option label="1.2.3: Structure Your HTML">1.2.3: Structure Your HTML</option>
+            <option label="1.2.4: Build Your Header: Challenge">1.2.4: Build Your Header: Challenge</option>
+            <option label="1.2.5: Build Your Header: Walkthrough">1.2.5: Build Your Header: Walkthrough</option>
+            <option label="1.2.6: Position the Header Image: Walkthrough">1.2.6: Position the Header Image: Walkthrough</option>
+            <option label="1.2.7: Build the Middle Sections: Challenge">1.2.7: Build the Middle Sections: Challenge</option>
+            <option label="1.2.8: Build the Middle Sections: HTML Walkthrough">1.2.8: Build the Middle Sections: HTML Walkthrough</option>
+            <option label="1.2.9: Build the Middle Sections: CSS Walkthrough">1.2.9: Build the Middle Sections: CSS Walkthrough</option>
+            <option label="1.2.10: Build Your Footer: Challenge">1.2.10: Build Your Footer: Challenge</option>
+            <option label="1.2.11: Build Your Footer: Walkthrough">1.2.11: Build Your Footer: Walkthrough</option>
+            <option label="1.2.12: Review of Positioning and Layout Key Points">1.2.12: Review of Positioning and Layout Key Points</option>
+            <option label="1.2.13: Upgrade the Typography">1.2.13: Upgrade the Typography</option>
+            <option label="1.2.14: Style Your Page">1.2.14: Style Your Page</option>
+            <option label="1.2.15: Wrap Up">1.2.15: Wrap Up</option>
+          </optgroup>
+          <optgroup label="Lesson 1.3">
+            <option label="Lesson 1.3: Hack The Times">Lesson 1.3: Hack The Times</option>
+            <option label="1.3.1: Use Chrome Developer Tools">1.3.1: Use Chrome Developer Tools</option>
+            <option label="1.3.2: Hack the New York Times: Challenge">1.3.2: Hack the New York Times: Challenge</option>
+            <option label="1.3.3: The Command Line">1.3.3: The Command Line</option>
+            <option label="1.3.4: Git and GitHub">1.3.4: Git and GitHub</option>
+          </optgroup>
+          <optgroup label="Lesson 1.4: Build a Landing Page from Scratch">
+            <option label="1.4.1: Upgrade Sublime">1.4.1: Upgrade Sublime</option>
+            <option label="1.4.2: Prepare the Landing Page Project">1.4.2: Prepare the Landing Page Project</option>
+            <option label="1.4.3: Build the Karma Navigation Bar: Challenge">1.4.3: Build the Karma Navigation Bar: Challenge</option>
+            <option label="1.4.4: Build the Karma Navigation Bar: Walkthrough">1.4.4: Build the Karma Navigation Bar: Walkthrough</option>
+            <option label="1.4.5: Construct the Background Image Section: Challenge">1.4.5: Construct the Background Image Section: Challenge</option>
+            <option label="1.4.6: Construct the Background Image Section: Walkthrough">1.4.6: Construct the Background Image Section: Walkthrough</option>
+            <option label="1.4.7: Save Your Progress with GitHub">1.4.7: Save Your Progress with GitHub</option>
+            <option label="1.4.8: Build the Three-Icon Section: Challenge">1.4.8: Build the Three-Icon Section: Challenge</option>
+            <option label="1.4.9: Build the Three-Icon Section: Walkthrough">1.4.9: Build the Three-Icon Section: Walkthrough</option>
+            <option label="1.4.10: Build the Karma Footer: Challenge">1.4.10: Build the Karma Footer: Challenge</option>
+            <option label="1.4.11: Build the Karma Footer: Walk-through">1.4.11: Build the Karma Footer: Walk-through</option>
+            <option label="1.4.12: FavIcons and Other Finishing Touches">1.4.12: FavIcons and Other Finishing Touches</option>
+          </optgroup>
+          <optgroup label="Lesson 1.5: Create a Responsive Web Page">
+            <option label="1.5.1: Intro to Responsive">1.5.1: Intro to Responsive</option>
+            <option label="1.5.2: Make About Me Responsive">1.5.2: Make About Me Responsive</option>
+            <option label="1.5.3: Submitting Your Portfolio">1.5.3: Submitting Your Portfolio</option>
+          </optgroup>
+          <optgroup label="Unit 2: jQuery">
+            </optgroup><optgroup label="Lesson 2.1: Introducing jQuery">
+            <option label="2.1.1: Hello World with jQuery">2.1.1: Hello World with jQuery</option>
+            <option label="2.1.2: Introducing the Document Object Model">2.1.2: Introducing the Document Object Model</option>
+            <option label="2.1.3: Practice jQuery Basics">2.1.3: Practice jQuery Basics</option>
+            <option label="2.1.4: Searching and Traversing the DOM">2.1.4: Searching and Traversing the DOM</option>
+            <option label="2.1.5: Wrap Up">2.1.5: Wrap Up</option>
+          </optgroup>
+          <optgroup label="Lesson 2.2: Manipulating the DOM, Events, and Effects with jQuery">
+            <option label="2.2.1: Street Fighter: Overview">2.2.1: Street Fighter: Overview</option>
+            <option label="2.2.2: Street Fighter: HTML and CSS Walkthrough">2.2.2: Street Fighter: HTML and CSS Walkthrough</option>
+            <option label="2.2.3: Street Fighter: jQuery Events Walkthrough">2.2.3: Street Fighter: jQuery Events Walkthrough</option>
+            <option label="2.2.4: Street Fighter: Animation Walkthrough">2.2.4: Street Fighter: Animation Walkthrough</option>
+            <option label="2.2.5: Street Fighter Project: Challenge">2.2.5: Street Fighter Project: Challenge</option>
+          </optgroup>
+           <optgroup label="Lesson 2.3: Build a Shopping List App">
+            <option label="2.3.1: Design and Wireframe Your App">2.3.1: Design and Wireframe Your App</option>
+            <option label="2.3.2: Create a Non-Interactive Version">2.3.2: Create a Non-Interactive Version</option>
+            <option label="2.3.3: Complete Your Shopping List App">2.3.3: Complete Your Shopping List App</option>
+           </optgroup>
+
+          <optgroup label="Unit 3: Programming Fundamentals in JavaScript">
+            </optgroup><optgroup label="Lesson 3.1: JavaScript Basics">
+              <option label="3.1.1: Introduction to Programming">3.1.1: Introduction to Programming</option>
+              <option label="3.1.2: Running Code in the JavaScript Console">3.1.2: Running Code in the JavaScript Console</option>
+              <option label="3.1.3: Get to Know JavaScript's Data Types">3.1.3: Get to Know JavaScript's Data Types</option>
+              <option label="3.1.4: Numbers and Arithmetic Operators and Comparators">3.1.4: Numbers and Arithmetic Operators and Comparators</option>
+              <option label="3.1.5: Working with Strings">3.1.5: Working with Strings</option>
+              <option label="3.1.6: Working with Variables">3.1.6: Working with Variables</option>
+              <option label="3.1.7: Conditionals and Truthiness">3.1.7: Conditionals and Truthiness</option>
+              <option label="3.1.8: Loops and Arrays">3.1.8: Loops and Arrays</option>
+              <option label="3.1.9: FizzBuzz: Challenge">3.1.9: FizzBuzz: Challenge</option>
+              <option label="3.1.10: Wrap Up">3.1.10: Wrap Up</option>
+            </optgroup>
+
+
+            <optgroup label="Lesson 3.2: Functions and Scope">
+              <option label="3.2.1: Introduction to Functions">3.2.1: Introduction to Functions</option>
+              <option label="3.2.2: Practice Functions">3.2.2: Practice Functions</option>
+              <option label="3.2.3: FizzBuzz Refactor: Challenge">3.2.3: FizzBuzz Refactor: Challenge</option>
+              <option label="3.2.4: Hot or Cold App: Challenge">3.2.4: Hot or Cold App: Challenge</option>
+              <option label="3.2.5: Wrap Up">3.2.5: Wrap Up</option>
+            </optgroup>
+            <optgroup label="Lesson 3.3: Objects and Object Oriented Programming">
+              <option label="3.3.1: Object Basics">3.3.1: Object Basics</option>
+              <option label="3.3.2: Deeper into Objects">3.3.2: Deeper into Objects</option>
+              <option label="3.3.3: Debugging JavaScript with Developer Tools">3.3.3: Debugging JavaScript with Developer Tools</option>
+              <option label="3.3.4: Design and Wireframe Your Quiz App">3.3.4: Design and Wireframe Your Quiz App</option>
+              <option label="3.3.5: Create a Non-Interactive Version of Your Quiz App">3.3.5: Create a Non-Interactive Version of Your Quiz App</option>
+              <option label="3.3.6: Make Your Quiz App Interactive">3.3.6: Make Your Quiz App Interactive</option>
+              <option label="3.3.7: Optional Bonus Project –&amp;nbsp;Contacts Application">3.3.7: Optional Bonus Project –&nbsp;Contacts Application</option>
+              <option label="3.3.8: Wrap Up">3.3.8: Wrap Up</option>
+            </optgroup>
+
+          <optgroup label="Unit 4: Ajax and Advanced jQuery">
+            </optgroup><optgroup label="Lesson 4.1: Working with AJAX">
+              <option label="4.1.1: Intro to APIs">4.1.1: Intro to APIs</option>
+              <option label="4.1.2: Coding with APIs">4.1.2: Coding with APIs</option>
+              <option label="4.1.3: Exploring the API Data">4.1.3: Exploring the API Data</option>
+              <option label="4.1.4: Showing the API Data">4.1.4: Showing the API Data</option>
+              <option label="4.1.5: Thinkful Tube: Challenge">4.1.5: Thinkful Tube: Challenge</option>
+              <option label="4.1.6: Wrap Up">4.1.6: Wrap Up</option>
+            </optgroup>
+            <optgroup label="Lesson 4.2: StackOverflow Reputation Builder">
+              <option label="4.2.1: Reputation Builder: Walkthrough">4.2.1: Reputation Builder: Walkthrough</option>
+              <option label="4.2.2: “Get Inspired” Feature">4.2.2: “Get Inspired” Feature</option>
+            </optgroup>
+            <optgroup label="Lesson 4.3: Bonus Code Challenges">
+              <option label="4.3.1: Tic Tac Toe">4.3.1: Tic Tac Toe</option>
+              <option label="4.3.2: Logo Search">4.3.2: Logo Search</option>
+            </optgroup>
+            <optgroup label="Lesson 4.4: Capstone: API Hack">
+              <option label="4.4.1: Choosing an API">4.4.1: Choosing an API</option>
+              <option label="4.4.2: Sketching your Project">4.4.2: Sketching your Project</option>
+              <option label="4.4.3: Prototype your App">4.4.3: Prototype your App</option>
+              <option label="4.4.4: Integrate an API">4.4.4: Integrate an API</option>
+            </optgroup>
+            <optgroup label="Lesson 4.5: Polishing your Portfolio">
+              <option label="4.5.1: Finishing your Portfolio">4.5.1: Finishing your Portfolio</option>
+              <option label="4.5.2: What to learn next">4.5.2: What to learn next</option>
+              <option label="4.5.3: Exit Interview">4.5.3: Exit Interview</option>
+            </optgroup>
+       </select>
+      </datalist>
+      <div style="margin-top:1em">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+  <p>HTML <code>&lt;datalist&gt;</code> boxes inherently have "typeahead" support allowing you to type into a text input to filter a list. For example, <a class="try-it-list" href="#next-weeks-goal-list">set focus to the <code>&lt;datalist&gt;</code></a> and type "3.2" to jump to the Functions Section.</p>
+  <p><code>&lt;optgroup&gt;</code> tags are used and nested to give structure to the available <code>&lt;options&gt;</code>.</p>
+  <p>Browser support for <code>&lt;datalist&gt;</code> is still poor. See <a href="http://caniuse.com/#search=datalist">caniuse</a>.</p>
+  <p><i>Note: While HTML Datalists filter a typeahahead list, they allow users to type any value. Validation, if needed, must be done manually.</i></p>
+
+  <button class="try-it-list">Try it</button>
+    <figure>
+      <img style="border:1px solid black" src="http://j4p.us/1I3I2Y1b0Y0g/Screen%20Shot%202016-06-08%20at%209.26.11%20PM.png" alt="Datalist in Firefox" />
+      <figcaption>HTML5 Datalist shown in Firefox</figcaption>
+    </figure>
+  </section>
+  <script defer>
+    if(Modernizr.input.list) {
+      document.getElementById('enter-anything').remove();
+      document.getElementById('or-choose').remove();
+    }
+    var btns = document.querySelectorAll('.try-it');
+    for(var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById("next-weeks-goal").focus();
+      }, false);
+    }
+
+    btns = document.querySelectorAll('.try-it-list');
+    for(var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector("input[list='next-weeks-goal-list']").focus();
+      }, false);
+    }
+
+    document.getElementById('datalist-form').addEventListener("submit", function(e) {
+      e.preventDefault();
+      var data = serializeArray(this);
+      console.log(data);
+    }, false);
+
+
+    function serializeArray(form) {
+      var field, l, s = [];
+      if (typeof form == 'object' && form.nodeName == "FORM") {
+          var len = form.elements.length;
+          for (i=0; i<len; i++) {
+              field = form.elements[i];
+              if (field.name && !field.disabled && field.type != 'file' && field.type != 'reset' && field.type != 'submit' && field.type != 'button') {
+                  if (field.type == 'select-multiple') {
+                      l = form.elements[i].options.length;
+                      for (j=0; j<l; j++) {
+                          if(field.options[j].selected)
+                              s[s.length] = { name: field.name, value: field.options[j].value };
+                      }
+                  } else if ((field.type != 'checkbox' && field.type != 'radio') || field.checked) {
+                      s[s.length] = { name: field.name, value: field.value };
+                  }
+              }
+          }
+      }
+      return s;
+  }
+  </script>
+</body>
+</html>
